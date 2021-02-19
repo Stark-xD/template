@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+#define ll long long int 
+int64_t INF64 = int64_t(2e18) + 5;
+int INF = int(1e9) + 5;
+
+ 
+
+void solve() {
+    
+}   
+
+int main() {
+    
+    ios::sync_with_stdio(false);
+    cin.tie(NULL), cout.tie(NULL);
+
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output1.txt", "w", stdout);
+    #endif  
+    
+
+    int testcases;
+    cin >> testcases;
+
+    while (testcases-- > 0) {
+        solve();
+    } 
+}

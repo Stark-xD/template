@@ -1,0 +1,68 @@
+package AMiT;
+
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+import static java.lang.Math.abs;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.util.StringTokenizer;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Functions {
+	
+	public static void main(String[] dummy) {
+		MyScanner ms = new MyScanner();
+		
+//		TODO : Do not write anything, this is just a template.
+		
+	}
+	
+	public static void sort(int[] arr) { // Collections.sort always uses Merge sort
+		ArrayList<Integer> sorted = new ArrayList<>();
+		for (int x : arr) 
+			sorted.add(x);
+		
+		Collections.sort(sorted);
+		for (int i = 0; i < arr.length; i++)
+			arr[i] = sorted.get(i);
+	}
+
+	static class MyScanner {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer("");
+		
+		String next() {
+			while (!st.hasMoreTokens()) 
+				try {
+					st = new StringTokenizer(br.readLine());
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			return st.nextToken();
+		}
+		
+		int nextInt() {
+			return Integer.parseInt(next());
+		}
+		
+		long nextLong() {
+			return Long.parseLong(next());
+		}
+		
+		int[] readArray(int n) {
+			int[] a = new int[n];
+			for (int i = 0; i < n; i++) 
+				a[i] = nextInt();
+			return a;
+		}
+		
+	}
+
+}
+

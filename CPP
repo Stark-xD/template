@@ -1,0 +1,46 @@
+#include <algorithm>
+#include <array>
+#include <cassert>
+#include <chrono>
+#include <cmath>
+#include <cstring>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <unordered_map>
+#include <unordered_set>
+#include <numeric>
+#include <queue>
+#include <random>
+#include <set>
+#include <vector>
+#include <bitset>
+using namespace std;
+
+int64_t INF64 = int64_t(2e18) + 5;					
+int INF = int(1e6) + 5;
+
+void solve() {
+	// TODO : Write your code here...
+
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+#ifndef AMiT
+	cin.tie(NULL), cout.tie(NULL);
+#endif
+
+// #ifndef ONLINE_JUDGE
+//     freopen("input.txt", "r", stdin);
+//     freopen("output1.txt", "w", stdout);
+// #endif
+
+    int testcases = 1;
+    cin >> testcases;
+
+    while (testcases-- > 0) {
+		solve();
+    }
+}
